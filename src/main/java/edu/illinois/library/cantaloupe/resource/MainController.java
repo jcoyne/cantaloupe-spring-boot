@@ -18,14 +18,14 @@ import java.util.List;
  * This controller uses the existing Route and AbstractResource system to maintain
  * compatibility with the current Cantaloupe architecture.
  */
-@RestController
+@Controller
 public class MainController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MainController.class);
 
     @GetMapping("/")
   	public String index() {
-  		return "Pool";
+  		return "index";
   	}
 
 }
